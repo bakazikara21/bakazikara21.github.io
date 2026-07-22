@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    /* 本文の文字サイズは 14 ~ 18px 推奨 */
+    font-size: 18px;
+
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+
+    /* 行の高さを指定 */
+    line-height: 1.7;
+
+    /* デフォルトの文字の色を黒に指定 */
+    color: #210;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    /* ロゴの横幅と余白の設定 */
+    width: 210px;
+    margin-top: 14px;
+}
+
+.main-nav {
+    display: flex;
+    /* flexboxを使って横並びにさせる */
+
+    font-size: 1.25rem;
+    margin-top: 34px;
+    list-style: none;
+
+}
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: #000;
+    transition: transform 0.25s ease;
+}
+
+.main-nav a:hover {
+    color: #0f0;
+    transform: scale(1.2);
+}
+
+.main-nav a:focus-visible {
+    color: #0f0;
+    transform: scale(1.2);
+}
+
+.page-header {
+    display: flex;
+    /* これでロゴマークと横並びにできる */
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1100px;
+
+    /* 左右がautoなので中央寄せになる */
+    margin: 0 auto;
+
+    /* スマホで見やすくなるように */
+    padding: 0 4%;
+}
+
+.info {
+    margin-top: 200px;
+}
+
+.home-content {
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin: 0 0 42px;
+}
+
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    font-weight: normal;
+}
+
+.big-bg {
+    /* 比率を保ったまま、画面いっぱいにする */
+    background-size: cover;
+
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#Home {
+    background-image: url(../images/background.JPG);
+    min-height: 100vh;
+}
+
+#Me {
+    background-image: url(../images/me_bg.JPG);
+    height: 300px;
+}
+
+#Me .wrapper {
+    color: #210;
+    text-align: center;
+    margin-top: 0;
+}
+
+#Hobby {
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+        url(../images/bgHobby.JPG);
+
+    height: 300px;
+}
+
+#Hobby .wrapper {
+    color: #210;
+    text-align: center;
+    margin-top: 0;
+}
+
+#Kyopro {
+    background-image: url(../images/AtCoder.png);
+    height: 300px;
+}
+
+#Kyopro .wrapper {
+    color: #210;
+    text-align: center;
+    margin-top: 0;
+}
+
+#Deep {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+        url(../images/MLP.png);
+    height: 300px;
+}
+
+#Deep .deep {
+    color: #210;
+    text-align: center;
+}
+
+article {
+    margin-top: 20px;
+    width: 74%;
+    border: 1px solid #432;
+    padding: 0 20px;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 2rem;
+}
+
+aside {
+    margin-top: 20px;
+    width: 22%;
+}
+
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+    padding: 10px;
+}
+
+.sub-menu a {
+    color: #432;
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: #0bd;
+}
+
+.me-contents {
+    display: flex;
+    /* 横並びにできる */
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.post-title {
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left: 30px solid #888;
+    padding-left: 10px;
+}
+
+.grid {
+    /* CSSグリッドでレイアウトを整える */
+    display: grid;
+
+    /* 子要素の横幅を1 : 1で区切りたい */
+    grid-template-columns: repeat(2, 1fr);
+
+    /* 子要素同士の余白を決める */
+    gap: 10px;
+
+    /* 子要素の高さを250px 250pxにしたい */
+    grid-template-rows: 250px 250px;
+
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    /* background-image: linear-gradient(#fff, #210);
+    background-blend-mode: luminosity; */
+}
+
+.item {
+    /* 画像をセルいっぱいに表示し、縦横比を保つ */
+    position: relative;
+    display: flex;
+
+    /* 文字が縦横ともに中央になる */
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    transition: transform .25s ease, filter .25s ease;
+}
+
+.item::before {
+    /* 全体を暗くする設計 */
+    position: absolute;
+    inset: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, .2);
+
+    /* transition: X .25s ease => Xに変化がある場合、1/4秒かけて滑らかに変化しろ */
+    transition: background-color .25s ease;
+}
+
+.item span {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .9);
+}
+
+.item:hover,
+.item:focus-visible {
+    /* 1.1倍明るくする */
+    filter: brightness(1.1);
+
+    /* 大きさを0.98倍にしてホバーしてる感を出す。 */
+    transform: scale(.98);
+}
+
+.item:hover::before,
+.item:focus-visible::before {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.item:focus-visible {
+    /* タブでその場所を指し示したとき緑色で表示される */
+    outline: 4px solid #0f0;
+    outline-offset: 2px;
+}
+
+#me {
+    background-image: url(../images/ziro.JPG);
+}
+
+#kyopro {
+    background-image: url(../images/kyoproBG.png);
+    background-size: contain;
+}
+
+#deep {
+    background-image: url(../images/DeepNN.jpg);
+}
+
+#hobby {
+    background-image: url(../images/karaoke_young.png);
+}
+
+
+footer {
+    color: #fff;
+    background-color: #210;
+    text-align: center;
+    padding: 26px 0;
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 250px);
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    .home-content {
+        margin-top: 10%;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .me-contents {
+        flex-direction: column;
+    }
+
+    article,
+    aside {
+        width: 100%;
+    }
+
+    #Me .page-title {
+        margin-top: 30px;
+    }
+
+    aside {
+        margin-top: 60px;
+    }
+
+    .post-info {
+        margin-bottom: 30px;
+    }
+
+    .post-title {
+        font-size: 1.375rem;
+    }
+}

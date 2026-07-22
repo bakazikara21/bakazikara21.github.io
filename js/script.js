@@ -1,0 +1,1 @@
+document.body.style.cursor = "url('../images/LaserBeamBlue.cur'), auto";
