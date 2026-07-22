@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--拡大率100%-->
+    <meta name="description" content="bakazikaraに関する情報をまとめたWebサイト">
+
+    <title>bakazikara Page</title> <!-- Webページのタイトル -->
+
+    <link rel="icon" type="image/png" href="images/apple.png"> <!-- fabiconの設定 -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css"> <!-- CSSファイルのパスを指定する -->
+</head>
+
+<body>
+    <div id="Home" class="big-bg">
+        <!-- ヘッダー開始 -->
+        <header class="page-header wrapper">
+            <h1><a href="index.html"><img class="logo" src="images/web_logo.png" alt="ロゴマーク"></a></h1>
+            <nav>
+                <ul class="main-nav">
+
+                    <li><a href="pages/me.html">About me</a></li>
+                    <li><a href="pages/hobby.html">趣味</a></li>
+                    <li><a href="pages/kyopro.html">競プロ</a></li>
+                    <li><a href="pages/deep.html">深層学習</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="home-content wrapper">
+            <h2 class="page-title">Welcome To My Page</h2>
+            <p>ずっと、Webサイトが作りたかった。</p>
+        </div>
+    </div>
+    <!-- ヘッダー終了 -->
+
+    <!-- メインコンテンツ開始 -->
+    <main class="wrapper">
+        <h3 class="info">
+            information
+        </h3>
+        <div class="grid">
+            <a class="item" id="me" href="pages/me.html">
+                <span>私について</span>
+            </a>
+            <a class="item" id="hobby" href="pages/hobby.html">
+                <span>趣味について</span>
+            </a>
+            <a class="item" id="kyopro" href="pages/kyopro.html">
+                <span>競技プログラミングについて</span>
+            </a>
+            <a class="item" id="deep" href="pages/deep.html">
+                <span>深層学習について</span>
+            </a>
+        </div>
+    </main>
+    <!-- メインコンテンツ終了 -->
+
+    <!-- フッター開始 -->
+    <footer>
+        <p><small>&copy; 2026 bakazikara</small></p>
+    </footer>
+    <!-- フッター終了 -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
