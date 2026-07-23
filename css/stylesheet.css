@@ -391,7 +391,7 @@ footer p {
     }
 
     .big-bg {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .big-bg p {
@@ -401,5 +401,9 @@ footer p {
     #Me p,
     #Me .page-title {
         color: #fff;
+    }
+
+    .info {
+        font-size: 1.6rem;
     }
 }
