@@ -348,7 +348,7 @@ footer p {
     }
 
     .page-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .main-nav {
@@ -391,11 +391,11 @@ footer p {
     }
 
     .big-bg {
-        height: 500px;
+        margin-bottom: 30px;
     }
 
     .big-bg p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #Me p,
