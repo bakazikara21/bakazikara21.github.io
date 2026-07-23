@@ -120,7 +120,9 @@ h3 {
 }
 
 #Me {
-    background-image: url(../images/me_bg.JPG);
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+        url(../images/me_bg.JPG);
     height: 300px;
 }
 
@@ -348,7 +350,7 @@ footer p {
     }
 
     .page-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .main-nav {
